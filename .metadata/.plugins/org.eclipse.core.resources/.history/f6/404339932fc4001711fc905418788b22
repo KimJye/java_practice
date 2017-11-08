@@ -1,0 +1,31 @@
+package hw8_2;
+
+public class MyLinkedQueue{
+	private Node front;
+	private Node rear;
+	
+	public MyLinkedQueue(){
+		front=null;
+		rear=null;
+	}
+	
+	public boolean isEmpty(){
+		return(front==null);
+	}
+	
+	public void enQueue(char item){
+		Node newNode = new Node(item);
+		
+		
+	}
+	
+	private class Node{
+		char data;
+		Node link;
+		
+		Node(char data){
+			this.data=data;
+		}
+	}
+}
+

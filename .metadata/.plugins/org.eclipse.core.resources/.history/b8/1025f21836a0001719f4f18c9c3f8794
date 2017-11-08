@@ -1,0 +1,43 @@
+
+public class String01 {
+	static Object [] array;
+	
+	static void addData(int count){
+		array = new Object[count*2];
+		int n=0;
+		for(int i=0;i<count;i++){
+			array[i]=new Integer(n);
+			array[i+1]=String.valueOf(n);
+			n++;
+		}
+	}
+	
+	static int findIndex(int value){
+		int index=0;
+		for(int i=0;i<array.length;i++){
+			if(array[i] instanceof Integer){
+				if(array[i].equals(value))
+					index=i;
+			}
+		}
+		return index;
+	}
+	
+	static int findIndex(String value){
+		int index=0;
+		for(int i=0;i<array.length;i++){
+			if(array[i] instanceof String){
+				if(array[i].equals(value)){
+					index=i;
+				}
+			}
+		}
+		return index;
+	}
+	
+	public static void main(String[] args){
+		addData(5);
+		System.out.println(findIndex(2));
+		System.out.println(findIndex("2"));
+	}
+}

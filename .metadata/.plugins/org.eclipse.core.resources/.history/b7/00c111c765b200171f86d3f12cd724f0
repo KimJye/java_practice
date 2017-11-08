@@ -1,0 +1,15 @@
+package e2017.exam1;
+
+public class Example09 {
+
+	class Data{
+		Object obj;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Data[]a=new Data[3];
+		//a[0]=new Data[]{(new int[]{1,2,3})};
+		
+	}
+
+}

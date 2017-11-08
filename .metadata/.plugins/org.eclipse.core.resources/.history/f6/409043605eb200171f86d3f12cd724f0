@@ -1,0 +1,23 @@
+package e2017.exam1;
+import java.util.Arrays;
+public class Example11 {
+	
+	static void printSum(int...a){
+		int sum=0;
+		//StringBuffer str =new StringBuffer();
+		for(int i=0;i<a.length;i++){
+			sum+=a[i];
+		}
+		System.out.printf("배열:["+a+"]");
+		System.out.printf("   합계:%d"+sum);
+		//str.append("배열:[").append(a).append("]").append("  합계:"+sum);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[]a=new int[]{21,33,17,40,5,13};
+		
+		printSum(11,13,17,20);
+		printSum(a);
+	}
+
+}
